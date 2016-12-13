@@ -1,0 +1,30 @@
+<html lang='zh-CN' xml:lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?t=1451964198000" />
+    <title>android studio 如何读取html文件的？如何存放原生资源？ - 开源中国社区</title>
+    <meta name="Description" itemprop="description" content="android studio 如何读取html文件的？如何存放原生资源？- 开源中国社区"/>
+
+</head>
+<body>
+<p>WebView与Javascript交互</p>
+<div>
+    <button onClick="window.test.actionFromJs()">点击调用Native代码</button>
+</div>
+<br/>
+<div>
+    <button onClick="window.test.actionFromJsWithParam('come from Js')">点击调用Native代码并传递参数</button>
+</div>
+<br/>
+<div id="helloweb">调用打印信息</div>
+
+</body>
+
+<script>
+
+    function funFromjs(){
+        document.getElementById("helloweb").innerHTML="HelloWebView,i'm from js";
+    }
+    </script>
+</html>
